@@ -735,6 +735,12 @@ if (total = true){
 
 //CALCULADORA
 
+			//OPERADOR TERNARIO
 
+let temperatura = 32
 
+temperatura >30 ? console.log("Dia caluroso"): console.log("Dia agradable") // Retorna dos valores, y van a variar si la condicion se cumple
 
+let numero = 30
+JSON.stringify(numero)
+console.log(numero + 5)

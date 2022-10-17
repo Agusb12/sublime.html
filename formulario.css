@@ -1,28 +1,28 @@
 *{
 background-color:#444 ;
-	color: white;
-	 list-style: none;
-	 text-decoration: none;
-	 font-family: 'Anton', sans-serif;
+color: white;
+list-style: none;
+text-decoration: none;
+ font-family: 'Anton', sans-serif;
 	 
 	}
 
 .titulo{
-	width: 100%;
-	display: block;
-	background:linear-gradient(to left,black,transparent);
-	text-align: center;
+width: 100%;
+display: block;
+background:linear-gradient(to left,black,transparent);
+text-align: center;
 }
 .button{
-	padding: 10px;
-	border: none;
-	border-bottom: solid 2px green;
-	width: 100%;
+padding: 10px;
+border: none;
+border-bottom: solid 2px green;
+width: 100%;
 }
 .button:hover{
-	color: black;
-	background-color: white;
-	transition-duration:2s;
+color: black;
+background-color: white;
+transition-duration:2s;
 	
 }
 
@@ -96,8 +96,9 @@ input:hover{
 	height: 250px;
 	width: 200px;
 	background-color: black;
-	object-fit: scale-down;
+	object-fit: contain;
 }
+
 .movido:invalid{
 	animation: shake.3s;
 }
