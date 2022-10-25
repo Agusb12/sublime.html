@@ -1,9 +1,80 @@
 *{
-	background-color: #444;
-	color: white;
-	font-family: 'Anton', sans-serif;
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+background-color: #444;
+color: white;
+font-family: 'Bebas Neue', cursive;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+img{
+    width: 200px;
+    height: 150px;
+    
+}
+
+.contenedor-div{
+    display: flex;
+    
+    
+}
+
+
+.div-titulo h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+.btn-agregar{
+    padding: 1em 3em;
+    color: rgb(110,237,237);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em rgb(110,237,237);
+    background-color: rgb(44,157,157);
+    border: 0.25em solid rgb(110,237,237);
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0.25em rgb(110,237,237),
+                0 0 4em 1em rgba(65,243,243,0.781),
+                inset 0 0 0.75em 0.25em rgb(110,237,237);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cart-icon{
+    position: relative;
+    left: 1100px;
+   
+}
+
+.basura{
+    display: block;
+}
+
+.div-modal{
+    height: 350px;
+    width:50%;
+    background-color: black;
+    color:white;
+    z-index: 100;
+}
+
+.btn-agreagr:hover{
+    color: rgb(61,179,13);
+    background-color: rgb(115, 206, 103);
+    box-shadow:0 0 1em 0.25em
+    rgb(115, 206, 103),
+    0 0 4em 2em
+    rgba(65, 228, 49, 0.7),
+    inset 0 0 0 0.75em 0.25em
+    rgb(115, 206, 103);
+
+    ;
 }
 
