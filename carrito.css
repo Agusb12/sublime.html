@@ -13,14 +13,6 @@ img{
     height: 150px;
     
 }
-
-.contenedor-div{
-    display: flex;
-    
-    
-}
-
-
 .div-titulo h1{
     width: 100%;
     display: flex;
@@ -36,12 +28,8 @@ img{
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0 0 0.5em rgb(110,237,237);
-    background-color: rgb(44,157,157);
     border: 0.25em solid rgb(110,237,237);
     border-radius: 1em;
-    box-shadow: 0 0 1em 0.25em rgb(110,237,237),
-                0 0 4em 1em rgba(65,243,243,0.781),
-                inset 0 0 0.75em 0.25em rgb(110,237,237);
     outline: none;
     cursor: pointer;
     transition: all 0.3s;
@@ -50,31 +38,45 @@ img{
 .cart-icon{
     position: relative;
     left: 1100px;
-   
+    top: 12px;
+  
 }
 
-.basura{
-    display: block;
+.cart-icon:hover{
+    background-color: yellowgreen;
+    color: chartreuse;
+    border: solid 1px green;
+    border-radius: 25px;
+    transition-duration: 3s;
 }
 
-.div-modal{
-    height: 350px;
-    width:50%;
-    background-color: black;
-    color:white;
-    z-index: 100;
+.btn-agregar iconify-icon{
+    position: relative;
+    left: 10px;
+    color:green;
+    text-shadow: 0 0 0.5em green;
+}
+.modal-contenido{
+    display: none;
 }
 
-.btn-agreagr:hover{
-    color: rgb(61,179,13);
-    background-color: rgb(115, 206, 103);
-    box-shadow:0 0 1em 0.25em
-    rgb(115, 206, 103),
-    0 0 4em 2em
-    rgba(65, 228, 49, 0.7),
-    inset 0 0 0 0.75em 0.25em
-    rgb(115, 206, 103);
-
-    ;
+.contenedor-div{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
 }
+.div-elementos{
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
 

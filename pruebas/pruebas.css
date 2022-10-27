@@ -1,0 +1,20 @@
+.contenedor{
+    background-color: aquamarine;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.cajas{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 20px;
+   
+}

@@ -5,15 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="carrito.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="icon" href="assets/ropa.png">
 	<title>CHEAP CLOTHE</title>
 </head>
 <body>
 	<a href="formulario.html">Formulario</a>
+	<button id="carritoCerrar">Vaciar carrito</button>
 	<iconify-icon id="icono" class="cart-icon" icon="bi:cart" style="color: green;" width="30" height="30"></iconify-icon>
 		<div class="div-titulo">
 			<h1 class="titulo">CHEAP CLOTHE</h1>
 		</div>	
 		<main id="contenedor-productos" class="contenedor-div"></main>
+		<div class="modal-contenedor">
+			<div id="modal" class="modal-contenido">
+				<h3>carrito</h3>
+				<div id="carrito-contenedor">
+
+
+				</div>
+			</div>
+
+		</div>		
 <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>		
 <script src="carrito.js"></script>	
 </body>

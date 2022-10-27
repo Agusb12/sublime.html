@@ -737,10 +737,54 @@ if (total = true){
 
 			//OPERADOR TERNARIO
 
-let temperatura = 32
+// let temperatura = 32
 
-temperatura >30 ? console.log("Dia caluroso"): console.log("Dia agradable") // Retorna dos valores, y van a variar si la condicion se cumple
+// temperatura >30 ? console.log("Dia caluroso"): console.log("Dia agradable") // Retorna dos valores, y van a variar si la condicion se cumple
 
-let numero = 30
-JSON.stringify(numero)
-console.log(numero + 5)
+// let numero = 30
+// JSON.stringify(numero)
+// console.log(numero + 5)
+
+// const usuario={
+// 	nombre:"Agustin",
+// 	edad:19,
+// 	conocimientos:{
+// 		matematica:"Nivel medio",
+// 		gramatica:null
+// 	}
+// }
+
+// console.log(usuario?.conocimientos?.matematica || "Este conocimiento no esta integrado")
+// console.log(usuario?.conocimientos?.gramatica || "Este conocimiento no esta integrado")
+
+// const {conocimientos} = usuario
+
+// console.log(conocimientos)
+
+// const {conocimientos:{ matematica,gramatica} } = usuario
+
+// console.log(conocimientos.matematica)
+
+const producto = {
+	Name: "Fideos",
+	Price:230,
+	Stock:true
+}
+
+// const{Name:nombre,Price:Precio,Stock:Id} = producto
+
+// console.log(nombre,Precio,Id)
+
+const desestructurar =(item)=>{
+	const{Name,Price,Stock} = item;
+	console.log(Name,Price,Stock)
+}
+
+desestructurar(producto)
+
+const desestructurar2 = ({Name,Price,Stock})=>{
+	console.log(Name,Price,Stock)
+}
+
+desestructurar2(producto)
+
