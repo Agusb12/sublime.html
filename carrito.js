@@ -13,7 +13,7 @@ const stockProductos = [
         contenido.classList.add("div-elementos")
         contenido.innerHTML = `
         <img src="${producto.imagen}" alt=""
-        <p>Precio:${producto.precio}</p>
+        <p class="carrito-precio">Precio:${producto.precio}</p>
         <p>Talle:${producto.talle}</p>
         <button id="agregar${producto.id}"class="btn-agregar">Agregar al carrito<iconify-icon class="basura-cart" icon="fa:cart-plus"></iconify-icon></button>
        `
@@ -31,6 +31,21 @@ const stockProductos = [
         console.log(carrito)
         
     }
+
+    const entrarCarrito = document.getElementById("icono")
+        entrarCarrito.addEventListener("click",()=>{
+            const Nmodal = document.getElementById("modal-contenedor")
+                Nmodal.classList.add("modal-contenedor-on")
+                Nmodal.innerHTML = 
+                `<div id="modal" class="modal-contenido">
+				    <h3>carrito</h3>
+				    <div id="carrito-contenedor">
+                    </div>
+			    </div>`
+        })
+        
+
+ 
 
 
     

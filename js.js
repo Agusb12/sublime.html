@@ -653,85 +653,85 @@
 
 
 // FORMULARIO
-const abrirForm = ()=>{
-	let total = document.createElement("div")
-		total.innerHTML= `<div id= "div-contenedor">
-							<form class="form" id="formulario">
-								<input pattern="[a-z]*" class="movido" type="text" name="Nombre" placeholder="Ingrese su nombre" required>
-								<input type="password" name="password" placeholder="Ingrese su contraseña" required>
-								<input type="email" name="email" placeholder="Ingrese su email" required>
-								<button id="boton">enviar</button>
-							</form>
-						</div>`
+// const abrirForm = ()=>{
+// 	let total = document.createElement("div")
+// 		total.innerHTML= `<div id= "div-contenedor">
+// 							<form class="form" id="formulario">
+// 								<input pattern="[a-z]*" class="movido" type="text" name="Nombre" placeholder="Ingrese su nombre" required>
+// 								<input type="password" name="password" placeholder="Ingrese su contraseña" required>
+// 								<input type="email" name="email" placeholder="Ingrese su email" required>
+// 								<button id="boton">enviar</button>
+// 							</form>
+// 						</div>`
 
-document.body.append(total)
-if (total = true){
-	apartado.remove()
-}
+// document.body.append(total)
+// if (total = true){
+// 	apartado.remove()
+// }
 
-if (total = true){
-	const form = (e) =>{
-		e.preventDefault()
-		const {Nombre,password,email} = e.target
-			sessionStorage.setItem("user",(Nombre.value))
-			sessionStorage.setItem("password",(password.value))
-			sessionStorage.setItem("email",(email.value))
-				let nombre = sessionStorage.getItem("user")
-				let contraseña = sessionStorage.getItem("password")
-				let mail = sessionStorage.getItem("email")
-		// console.log(typeof "user")
+// if (total = true){
+// 	const form = (e) =>{
+// 		e.preventDefault()
+// 		const {Nombre,password,email} = e.target
+// 			sessionStorage.setItem("user",(Nombre.value))
+// 			sessionStorage.setItem("password",(password.value))
+// 			sessionStorage.setItem("email",(email.value))
+// 				let nombre = sessionStorage.getItem("user")
+// 				let contraseña = sessionStorage.getItem("password")
+// 				let mail = sessionStorage.getItem("email")
+// 		// console.log(typeof "user")
 
-				//RECORRER STORAGE
-		for (let i = 0; i < sessionStorage.length; i++){  //De esta forma se recorre un storage, con el metodo key.
-				let clave = sessionStorage.key(i)
-				console.log(clave)
-				console.log(sessionStorage.getItem(clave))
-}
+// 				//RECORRER STORAGE
+// 		for (let i = 0; i < sessionStorage.length; i++){  //De esta forma se recorre un storage, con el metodo key.
+// 				let clave = sessionStorage.key(i)
+// 				console.log(clave)
+// 				console.log(sessionStorage.getItem(clave))
+// 		}
 
-			 if (Nombre.value.length === 0) {alert ("No puedo no tener caracteres")}
+// 			 if (Nombre.value.length === 0) {alert ("No puedo no tener caracteres")}
 
-		 Formulario.remove()
+// 		 Formulario.remove()
 
-		 const celulares =  [
-			{nombre:"Android",modelo:"A20",precio:45000,disponibilidad : true},
-			{nombre:"Iphone",modelo:"7plus",precio:50000,disponibilidad : true},
-			{nombre:"Android",modelo:"note 4",precio:20000,disponibilidad:true},
-			{nombre:"Iphone",modelo:"9",precio:75000,disponibilidad:false}
-			]
+// 		 const celulares =  [
+// 			{nombre:"Android",modelo:"A20",precio:45000,disponibilidad : true},
+// 			{nombre:"Iphone",modelo:"7plus",precio:50000,disponibilidad : true},
+// 			{nombre:"Android",modelo:"note 4",precio:20000,disponibilidad:true},
+// 			{nombre:"Iphone",modelo:"9",precio:75000,disponibilidad:false}
+// 			]
 		
-			let  disponibles = []
+// 			let  disponibles = []
 		
-			Disponibles = celulares.filter( (el)=>{if(el.disponibilidad === true){disponibles.push(el)}})
-				console.log(disponibles)
+// 			Disponibles = celulares.filter( (el)=>{if(el.disponibilidad === true){disponibles.push(el)}})
+// 				console.log(disponibles)
 		
-			let btnDeCompra = document.createElement("button")
-				btnDeCompra.innerHTML = `<button id="compra">Compre aqui</button>`
-					document.body.append(btnDeCompra)
+// 			let btnDeCompra = document.createElement("button")
+// 				btnDeCompra.innerHTML = `<button id="compra">Compre aqui</button>`
+// 					document.body.append(btnDeCompra)
 		
-			const abrirCatalogo =()=>{
-				let catalogo = document.createElement("div")
-				catalogo.innerHTML = 
-						`<div class= catalogo>
-							<img class = "img-catalogo" src = https://images.samsung.com/is/image/samsung/mx-galaxy-a20-a205-sm-a205gzkltce-frontblack-thumb-159327091></img>
-							<img class = "img-catalogo" src = https://images.fravega.com/f300/e4e617fc64a5a0ed4681f3512eea7440.jpg.webp </img>
-							<img class = "img-catalogo" src = https://assets.piliapp.com/s3pxy/actual-size/galaxy-note-4/default-front.png </img>
-						</div>`
-				document.body.append(catalogo)
+// 			const abrirCatalogo =()=>{
+// 				let catalogo = document.createElement("div")
+// 				catalogo.innerHTML = 
+// 						`<div class= catalogo>
+// 							<img class = "img-catalogo" src = https://images.samsung.com/is/image/samsung/mx-galaxy-a20-a205-sm-a205gzkltce-frontblack-thumb-159327091></img>
+// 							<img class = "img-catalogo" src = https://images.fravega.com/f300/e4e617fc64a5a0ed4681f3512eea7440.jpg.webp </img>
+// 							<img class = "img-catalogo" src = https://assets.piliapp.com/s3pxy/actual-size/galaxy-note-4/default-front.png </img>
+// 						</div>`
+// 				document.body.append(catalogo)
 
-					if(catalogo=true){
-						btnDeCompra.remove()
-					}
-			}
+// 					if(catalogo=true){
+// 						btnDeCompra.remove()
+// 					}
+// 			}
 	
-			const eventCompra = document.querySelector("#compra")
-				eventCompra.addEventListener("click",abrirCatalogo)
-	}
-		const Formulario = document.querySelector("#formulario");
-			Formulario.addEventListener("submit",form);
-}
-}
-	const apartado = document.querySelector("#ingreso");
-		apartado.addEventListener("click",abrirForm);
+// 			const eventCompra = document.querySelector("#compra")
+// 				eventCompra.addEventListener("click",abrirCatalogo)
+// 	}
+// 		const Formulario = document.querySelector("#formulario");
+// 			Formulario.addEventListener("submit",form);
+// }
+// }
+// 	const apartado = document.querySelector("#ingreso");
+// 		apartado.addEventListener("click",abrirForm);
 
 //CALCULADORA
 
@@ -745,14 +745,14 @@ if (total = true){
 // JSON.stringify(numero)
 // console.log(numero + 5)
 
-// const usuario={
-// 	nombre:"Agustin",
-// 	edad:19,
-// 	conocimientos:{
-// 		matematica:"Nivel medio",
-// 		gramatica:null
-// 	}
-// }
+const usuario={
+	nombre:"Agustin",
+	edad:19,
+	conocimientos:{
+		matematica:"Nivel medio",
+		gramatica:-3
+	}
+}
 
 // console.log(usuario?.conocimientos?.matematica || "Este conocimiento no esta integrado")
 // console.log(usuario?.conocimientos?.gramatica || "Este conocimiento no esta integrado")
@@ -761,30 +761,79 @@ if (total = true){
 
 // console.log(conocimientos)
 
-// const {conocimientos:{ matematica,gramatica} } = usuario
-
+// const {conocimientos,conocimientos:{ matematica,gramatica} } = usuario
+// console.log(gramatica  ||  "es un numero negativo") 
 // console.log(conocimientos.matematica)
 
-const producto = {
-	Name: "Fideos",
-	Price:230,
-	Stock:true
-}
 
+
+// const producto = {
+// 	Name: "Fideos",
+// 	Price:230,
+// 	Stock:true
+// }
+//				ASIGNAR ALIAS
 // const{Name:nombre,Price:Precio,Stock:Id} = producto
 
 // console.log(nombre,Precio,Id)
 
-const desestructurar =(item)=>{
-	const{Name,Price,Stock} = item;
-	console.log(Name,Price,Stock)
+// const desestructurar =(item)=>{
+// 	const{Name,Price,Stock} = item;
+// 	console.log(Name,Price,Stock)
+// }
+
+// desestructurar(producto)
+
+// const desestructurar2 = ({Name,Price,Stock})=>{
+// 	console.log(Name,Price,Stock)
+// }
+// desestructurar2(producto)
+
+
+
+// const JasonX = (modificable)=>{
+// 	const transformador = JSON.stringify(modificable)
+// 		return transformador
+// }
+
+// const NuevoStorage =localStorage.setItem("Valores",JasonX(producto))
+// const valoresNS = localStorage.getItem("Valores")
+// console.log(valoresNS)
+
+// const nombres = ["Lucas","Matias","Pedro","Marianela"]
+
+
+// const [a,,b] = nombres
+
+// console.log(a,b)
+
+// const Nombres = ["Agustin","Lucia","Santi"]
+
+// const nombresObj = {...Nombres}
+// const {0:nombre1,1:nombre2,2:nombre3} = Nombres
+// console.log(nombre1)
+
+// 			//OPERADOR SPREED
+
+// const numeros = [1,10,-60,1000,467]
+
+// console.log( Math.max(numeros)) // NaN
+// console.log( Math.max(...numeros)) //1000
+
+const persona1= {
+	Nombre:"Agustin",
+	Edad:19,
+	Trabajo:null,
+	Estudios:"Secundario",
+	Cursos:{
+		HTML:true,
+		CSS:true,
+		Js:true,
+	}
 }
 
-desestructurar(producto)
+console.log(persona1?.Cursos?.Js ?? "") 
 
-const desestructurar2 = ({Name,Price,Stock})=>{
-	console.log(Name,Price,Stock)
-}
+const {Nombre:name,Edad:age,Trabajo:work,Cursos:learning,Cursos:{Js:JavaScript}} = persona1
 
-desestructurar2(producto)
-
+console.log(learning?JavaScript: "no, no lo tiene")

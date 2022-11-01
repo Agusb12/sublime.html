@@ -1,10 +1,11 @@
 *{
-background-color: #444;
+background-color: #fa98;
 color: white;
 font-family: 'Bebas Neue', cursive;
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+
 }
 
 
@@ -14,40 +15,41 @@ img{
     
 }
 .div-titulo h1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+   
+    height: 40px;
+    display: inline-block; 
+    margin: 2px auto;
 
+   
+}
+.div-titulo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
 }
 
 .btn-agregar{
     padding: 1em 3em;
-    color: rgb(110,237,237);
+    color: rgb(102, 102, 254, 1);
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 0 0 0.5em rgb(110,237,237);
-    border: 0.25em solid rgb(110,237,237);
+    text-shadow: 0 0 0.5em rgb(102, 102, 254, 1);
+    border: 0.25em solid rgb(102, 102, 254, 1);
     border-radius: 1em;
     outline: none;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.cart-icon{
-    position: relative;
-    left: 1100px;
-    top: 12px;
-  
-}
 
 .cart-icon:hover{
-    background-color: yellowgreen;
-    color: chartreuse;
-    border: solid 1px green;
-    border-radius: 25px;
-    transition-duration: 3s;
+
+ color: rgb(28, 225, 204,1);
+ 
 }
 
 .btn-agregar iconify-icon{
@@ -56,21 +58,70 @@ img{
     color:green;
     text-shadow: 0 0 0.5em green;
 }
-.modal-contenido{
+.modal-contenedor{
     display: none;
 }
 
+.modal-contenedor-on{
+    display: block;
+    position: fixed;
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 50%;
+}
+
+
 .contenedor-div{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    
+}  
+
+.contenedor-div .div-elementos{
+    justify-content: center;
+}
+
+.div-elementos img{
+    object-fit: scale-down;
+
+}
+
+.div-elementos{
+    border: solid 2px white;
+    margin: 10px 5px;
+    padding: 15px;
     
 }
-.div-elementos{
-    width: 300px;
-    text-align: center;
-    margin: 10px;
-    padding: 15px;
+
+.nav-carrito{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.a-form{
+    font-size: 16px;
+    text-decoration: none;
+}
+.a-form:hover{
+    color: rgb(28, 225, 204,1);
+    transition-duration: 1s;
+}
+.carrito-precio{
+    display: block;
+}
+
+.cerrarCarrito{
+    border: none;
+    font-size:16px;
+}
+
+.cerrarCarrito:hover{
+    color: rgb(28, 225, 204,1);
+    transition-duration: 1s;
 }
 
 
